@@ -1,0 +1,12 @@
+{
+  "name": "dev-radar",
+  "private": true,
+  "description": "개발팀 주간 기술 브리핑 — GitHub 트렌딩 TOP 7 기록과 테스트 레이더",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

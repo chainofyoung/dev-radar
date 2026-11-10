@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DEV RADAR · 개발팀 주간 기술 브리핑</title>
+  <meta name="description" content="매주 GitHub 트렌딩 TOP 7을 기록하고, 직접 테스트해 판정한 결과를 팀에 공유합니다.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23171411'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23f2eee4' stroke-width='1.6'/%3E%3Cpath d='M16 16 L16 2.5' stroke='%23c4361a' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='21.5' cy='10.5' r='2.4' fill='%23c4361a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Hahmlet:wght@400..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#top7">본문 바로가기</a>
+
+  <header class="wrap masthead">
+    <div class="dateline">
+      <span id="dateline">불러오는 중…</span>
+      <span class="dateline__right">GitHub 주간 트렌딩 TOP 7 기록</span>
+    </div>
+    <div class="nameplate">
+      <h1 class="nameplate__title" aria-label="DEV RADAR">DEV<svg class="nameplate__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="mark__ring" cx="50" cy="50" r="45" stroke-width="7"/>
+          <circle class="mark__ring" cx="50" cy="50" r="26" stroke-width="5"/>
+          <path class="mark__sweep" d="M50 50 L50 5 A45 45 0 0 1 81.8 18.2 Z"/>
+          <circle class="mark__core" cx="50" cy="50" r="8"/>
+          <circle class="mark__blip" cx="71" cy="31" r="6"/>
+        </svg>RADAR</h1>
+      <p class="nameplate__sub">개발팀 주간 기술 브리핑</p>
+    </div>
+    <hr class="double-rule">
+    <nav class="sections" aria-label="섹션">
+      <a href="#top7">이번 주 TOP 7</a>
+      <a href="#radar">레이더</a>
+      <a href="#archive">지난 호</a>
+      <a href="#digest">전달용 요약</a>
+      <a href="#method">운영 방식</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="top7" class="front" aria-labelledby="top7-title">
+      <div class="kicker-row">
+        <h2 id="top7-title" class="kicker">이번 주 GitHub 트렌딩 TOP 7</h2>
+        <p class="kicker-meta" id="issue-meta"></p>
+      </div>
+      <div class="front__grid">
+        <article class="lead" id="lead"><p class="loading">데이터를 불러오는 중…</p></article>
+        <aside class="box" id="numbers" aria-label="이번 호 숫자"></aside>
+      </div>
+      <ol class="briefs" id="briefs" start="2"></ol>
+      <details class="more" id="more" hidden>
+        <summary id="more-label">8위 이하 보기</summary>
+        <ol class="rest" id="rest" start="8"></ol>
+      </details>
+    </section>
+
+    <section id="radar" class="section" aria-labelledby="radar-title">
+      <div class="section__head">
+        <h2 class="section__title" id="radar-title"><small>§</small>레이더</h2>
+        <p class="section__note">직접 테스트한 기술은 판정에 따라 안쪽 링에, 아직 테스트 전인 이번 주 TOP 7은 바깥 ‘포착’ 링에 놓입니다. 번호에 마우스를 올리면 목록과 함께 표시됩니다.</p>
+      </div>
+      <div class="radar">
+        <figure class="radar__chart"><svg id="radar-svg" viewBox="0 0 640 640" role="img" aria-label="기술 레이더 차트"></svg></figure>
+        <div id="radar-legend"></div>
+      </div>
+      <ul class="ring-key" id="ring-key"></ul>
+    </section>
+
+    <section id="archive" class="section" aria-labelledby="archive-title">
+      <div class="section__head">
+        <h2 class="section__title" id="archive-title"><small>§</small>지난 호</h2>
+        <p class="section__note">주마다 TOP 7을 호수별로 보관합니다. 이번 호는 매일 갱신되고 일요일 마지막 갱신으로 마감됩니다.</p>
+      </div>
+      <table class="issues">
+        <thead><tr><th scope="col">호</th><th scope="col">주차</th><th scope="col">TOP 7</th><th scope="col">상태</th></tr></thead>
+        <tbody id="issues-body"></tbody>
+      </table>
+      <div class="repeaters">
+        <h3>여러 주 TOP 7에 오른 레포</h3>
+        <div id="repeaters"></div>
+      </div>
+    </section>
+
+    <section id="digest" class="section" aria-labelledby="digest-title">
+      <div class="section__head">
+        <h2 class="section__title" id="digest-title"><small>§</small>전달용 요약</h2>
+        <p class="section__note">주간보고나 팀 채널에 그대로 붙여 넣을 수 있게 이번 호를 정리한 텍스트입니다.</p>
+      </div>
+      <div class="digest">
+        <pre class="digest__text" id="digest-text"></pre>
+        <div class="digest__side">
+          <button class="btn" id="copy-digest" type="button">요약 복사</button>
+          <p id="copy-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section" aria-labelledby="method-title">
+      <div class="section__head">
+        <h2 class="section__title" id="method-title"><small>§</small>운영 방식</h2>
+        <p class="section__note">수집은 자동으로, 판단은 직접 써 본 뒤에. 한 주 단위로 아래 네 단계를 돌립니다.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__no">1</span>
+          <h3>수집</h3>
+          <p>매일 21:17(KST) GitHub Actions가 GitHub 주간 트렌딩을 읽어 이번 호를 갱신합니다. 일요일 마지막 갱신으로 그 주 기록이 마감됩니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">2</span>
+          <h3>선정·요약</h3>
+          <p>주간 순위 상위 7개를 그 주의 TOP 7로 기록하고, 레포 설명을 Claude로 한국어 요약합니다. 여러 주 연속 오른 레포는 따로 표시합니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">3</span>
+          <h3>직접 테스트</h3>
+          <p>우리 업무에 쓸 만한 것을 골라 Claude Code로 설치·실행해 보고, <span data-project>러브오피스</span>에 붙일 수 있는지 검토합니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">4</span>
+          <h3>판정·공유</h3>
+          <p>도입·시험·검토·보류로 판정해 레이더에 올리고, 전달용 요약을 주간보고와 팀 채널로 공유합니다.</p>
+        </li>
+      </ol>
+      <div class="claude-box">
+        <h3>Claude 활용 방식<small>사람은 판단, 반복 작업은 Claude</small></h3>
+        <ul>
+          <li><b>구축</b>이 사이트와 수집 파이프라인을 Claude Code로 설계·구현</li>
+          <li><b>요약</b>TOP 7 레포 설명을 한국어로 정리해 팀이 바로 읽을 수 있게</li>
+          <li><b>테스트</b>클론·설치·예제 실행과 오류 원인 분석을 Claude Code로 한 번에</li>
+          <li><b>적용 검토</b><span data-project>러브오피스</span> 코드 기준으로 붙일 위치와 위험 요소 확인</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="colophon" id="colophon"></div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

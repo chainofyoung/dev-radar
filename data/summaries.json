@@ -1,0 +1,15 @@
+{
+  "NVIDIA/auto-ontology": "데이터 위에 의미·그래프 기반 추론 계층을 만드는 Python 프레임워크",
+  "vercel-labs/agent-desktop": "AI 에이전트가 컴퓨터를 직접 조작하게 해 주는 CLI (computer use)",
+  "anthropics/skills": "Anthropic이 공개한 에이전트 스킬(Agent Skills) 저장소",
+  "milind-soni/OpenMausBot": "봇이 쓸 수 있는 가상 머신을 갖춘 오픈소스 Grok Bot 대안",
+  "max-sixty/worktrunk": "여러 AI 에이전트를 병렬로 돌리는 작업 흐름에 맞춘 Git worktree 관리 CLI",
+  "vercel-labs/agent-browser": "AI 에이전트용 브라우저 자동화 CLI",
+  "Donchitos/Claude-Code-Game-Studios": "Claude Code를 게임 개발 스튜디오처럼 쓰게 해 주는 구성 — AI 에이전트 49개, 워크플로 스킬 72개",
+  "mattpocock/skills": "실무 엔지니어를 위한 에이전트 스킬 모음 (작성자가 쓰는 .agents 디렉터리 공개)",
+  "cloudflare/security-audit-skill": "코딩 에이전트가 다단계 보안 감사를 하게 하는 스킬 — 결과를 따로 검증하고 기계가 읽는 형식으로 출력",
+  "The-PR-Agent/pr-agent": "오픈소스 PR 리뷰 에이전트",
+  "thedotmack/claude-mem": "에이전트가 세션 중 한 작업을 기록해 다음 세션까지 맥락을 이어 주는 도구",
+  "D4Vinci/Scrapling": "단일 요청부터 대규모 크롤링까지 처리하는 웹 스크래핑 프레임워크",
+  "anomalyco/hex": "맥·윈도·리눅스용 로컬 음성 받아쓰기"
+}

@@ -1,0 +1,60 @@
+name: DEV RADAR
+
+on:
+  schedule:
+    - cron: '17 12 * * *' # 매일 21:17 KST
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: dev-radar
+  cancel-in-progress: false
+
+jobs:
+  # 예약 실행·수동 실행 때 GitHub 주간 트렌딩을 수집해 data/에 커밋한다.
+  collect:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: 주간 트렌딩 수집
+        run: node scripts/collect.mjs
+
+      - name: 기록 커밋
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if git diff --cached --quiet; then
+            echo '변경 없음'
+          else
+            git commit -m "data: 주간 트렌딩 갱신 $(TZ=Asia/Seoul date +%F)"
+            git push
+          fi
+
+  # 사이트 배포: 저장소 변수 PAGES_ENABLED=true 일 때만 (README의 '사이트 공개' 참고)
+  deploy:
+    needs: collect
+    if: ${{ !cancelled() && needs.collect.result != 'failure' && vars.PAGES_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main # 방금 커밋한 수집 결과까지 포함
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
