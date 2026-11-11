@@ -3,185 +3,190 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DEV RADAR · 개발팀 기술 관제</title>
-  <meta name="description" content="매주 GitHub 트렌딩 TOP 7을 레이더로 포착하고, 직접 테스트해 판정한 결과를 팀에 공유합니다.">
-  <meta name="theme-color" content="#020604">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23020604' stroke='%2344ff9a' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%2344ff9a' stroke-opacity='.5'/%3E%3Cpath d='M16 16 L16 2 A14 14 0 0 1 27 8 Z' fill='%2344ff9a' fill-opacity='.45'/%3E%3Ccircle cx='22' cy='11' r='2' fill='%23f2fff7'/%3E%3C/svg%3E">
+  <title>DEV RADAR · 개발팀 주간 기술 브리핑</title>
+  <meta name="description" content="매주 GitHub 트렌딩 TOP 7을 기록하고, 직접 테스트해 판정한 결과를 팀에 공유합니다.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23171411'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23f2eee4' stroke-width='1.6'/%3E%3Cpath d='M16 16 L16 2.5' stroke='%23c4361a' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='21.5' cy='10.5' r='2.4' fill='%23c4361a'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Hahmlet:wght@400..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
-  <script>
-    // 첫 방문(세션당 1회)에만 부팅 화면을 보여 준다.
-    try {
-      if (!matchMedia('(prefers-reduced-motion: reduce)').matches && document.visibilityState === 'visible'
-        && sessionStorage.getItem('dev-radar-boot') !== '1') document.documentElement.classList.add('booting');
-    } catch (e) {}
-  </script>
 </head>
 <body>
-  <div class="boot" id="boot" aria-hidden="true">
-    <div class="boot__inner">
-      <div class="boot__log" id="boot-log"></div>
-      <p class="boot__skip">아무 키나 누르면 건너뜁니다</p>
-    </div>
-  </div>
-  <a class="skip" href="#console">본문 바로가기</a>
+  <div class="progress" aria-hidden="true"><i id="progress"></i></div>
+  <a class="skip" href="#top7">본문 바로가기</a>
 
-  <header class="hud">
-    <div class="hud__brand">
-      <svg class="hud__logo" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" class="hud__logo-ring"/>
-        <circle cx="20" cy="20" r="10" class="hud__logo-ring hud__logo-ring--in"/>
-        <g class="hud__logo-sweep"><path d="M20 20 L20 2 A18 18 0 0 1 33 7.6 Z"/></g>
-        <circle cx="27" cy="12" r="2" class="hud__logo-blip"/>
-      </svg>
-      <div>
-        <h1 class="hud__name">DEV RADAR</h1>
-        <p class="hud__sub">개발팀 기술 관제 · 주간 기술 브리핑</p>
-      </div>
+  <header class="wrap masthead">
+    <div class="dateline">
+      <span id="dateline">불러오는 중…</span>
+      <span class="dateline__right">GitHub 주간 트렌딩 TOP 7 기록<button class="print-btn" id="print-btn" type="button">인쇄 · PDF</button></span>
     </div>
-    <nav class="hud__nav" aria-label="섹션">
-      <a href="#console">레이더</a>
-      <a href="#log">스캔 기록</a>
-      <a href="#briefing">브리핑</a>
-      <a href="#sop">운영 절차</a>
-      <a href="#legend">판정 기준</a>
+    <div class="nameplate">
+      <h1 class="nameplate__title" aria-label="DEV RADAR">DEV<svg class="nameplate__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <circle class="mark__ring" cx="50" cy="50" r="45" stroke-width="7"/>
+          <circle class="mark__ring" cx="50" cy="50" r="26" stroke-width="5"/>
+          <path class="mark__sweep" d="M50 50 L50 5 A45 45 0 0 1 81.8 18.2 Z"/>
+          <circle class="mark__core" cx="50" cy="50" r="8"/>
+          <circle class="mark__blip" cx="71" cy="31" r="6"/>
+        </svg>RADAR</h1>
+      <p class="nameplate__sub">개발팀 주간 기술 브리핑</p>
+    </div>
+    <hr class="double-rule">
+    <nav class="sections" aria-label="섹션">
+      <a href="#top7">이번 주 TOP 7</a>
+      <a href="#movers">급상승</a>
+      <a href="#radar">레이더</a>
+      <a href="#archive">지난 호</a>
+      <a href="#digest">전달용 요약</a>
+      <a href="#method">운영 방식</a>
     </nav>
-    <dl class="hud__stats">
-      <div><dt>표적</dt><dd id="stat-contacts">–</dd></div>
-      <div><dt>판정</dt><dd id="stat-tracks">–</dd></div>
-      <div class="hud__stat--wide"><dt>발행</dt><dd id="stat-issue">–</dd></div>
-      <div class="hud__stat--wide"><dt>최근 수신</dt><dd id="stat-scan">–</dd></div>
-      <div><dt>KST</dt><dd id="stat-clock">--:--:--</dd></div>
-    </dl>
-    <p class="hud__live"><span class="dot"></span>LIVE</p>
+    <div class="breaking" aria-label="이번 호 주요 소식">
+      <p class="breaking__label">속보</p>
+      <div class="breaking__track"><div class="breaking__inner" id="breaking"></div></div>
+    </div>
   </header>
 
   <main class="wrap">
-    <section class="console" id="console" aria-labelledby="scope-title">
-      <div class="panel scope-panel">
-        <div class="panel__head">
-          <h2 class="panel__title" id="scope-title">이번 주 TOP 7 레이더<span>PPI SCOPE</span></h2>
-          <p class="panel__meta" id="issue-meta"></p>
-        </div>
-        <div class="scope" id="scope">
-          <canvas id="scope-canvas" aria-hidden="true"></canvas>
-          <div class="scope__quad scope__quad--tl" data-quad="agent"><span>에이전트 · 자동화</span><b>0</b></div>
-          <div class="scope__quad scope__quad--tr" data-quad="model"><span>AI 모델 · 데이터</span><b>0</b></div>
-          <div class="scope__quad scope__quad--bl" data-quad="tools"><span>개발 도구</span><b>0</b></div>
-          <div class="scope__quad scope__quad--br" data-quad="web"><span>웹 · 인프라</span><b>0</b></div>
-          <div class="scope__hits" id="scope-hits"></div>
-          <div class="reticle" id="reticle" hidden>
-            <i class="reticle__c reticle__c--tl"></i><i class="reticle__c reticle__c--tr"></i>
-            <i class="reticle__c reticle__c--bl"></i><i class="reticle__c reticle__c--br"></i>
-            <i class="reticle__ring"></i>
-            <span class="reticle__tag" id="reticle-tag">LOCK</span>
-          </div>
-          <div class="scope__tip" id="scope-tip" hidden></div>
-        </div>
-        <p class="scope__readout" id="scope-readout">커서를 레이더 위에 올리면 방위와 링이 표시됩니다</p>
-        <div class="scope__controls">
-          <button class="ctl" id="ctl-sweep" type="button" aria-pressed="false">스윕 정지</button>
-          <button class="ctl" id="ctl-speed" type="button">속도 10 RPM</button>
-          <button class="ctl" id="ctl-weak" type="button" aria-pressed="false">약한 신호 8–14위</button>
-          <p class="scope__keys"><kbd>←</kbd><kbd>→</kbd> 표적 전환 <kbd>Esc</kbd> 해제 <kbd>Space</kbd> 정지</p>
-        </div>
+    <section id="top7" class="front" aria-labelledby="top7-title">
+      <div class="kicker-row">
+        <h2 id="top7-title" class="kicker">이번 주 GitHub 트렌딩 TOP 7</h2>
+        <p class="kicker-meta" id="issue-meta"></p>
       </div>
+      <div class="front__grid">
+        <article class="lead" id="lead"><p class="loading">데이터를 불러오는 중…</p></article>
+        <aside class="box" id="numbers" aria-label="이번 호 숫자"></aside>
+      </div>
+      <ol class="briefs" id="briefs" start="2"></ol>
+      <details class="more" id="more" hidden>
+        <summary id="more-label">8위 이하 보기</summary>
+        <ol class="rest" id="rest" start="8"></ol>
+      </details>
+    </section>
 
-      <div class="console__side">
-        <section class="panel" aria-labelledby="tracks-title">
-          <div class="panel__head">
-            <h2 class="panel__title" id="tracks-title">표적 목록<span>TARGET LIST</span></h2>
-            <p class="panel__meta" id="tracks-meta"></p>
+    <section id="movers" class="section reveal-section" aria-labelledby="movers-title">
+      <div class="section__head">
+        <h2 class="section__title" id="movers-title"><small>§</small>이번 주 급상승</h2>
+        <p class="section__note">이번 주 GitHub 주간 트렌딩에 오른 레포를 한 주 동안 늘어난 별(★) 순으로 세웠습니다. 굵은 막대가 TOP 7, 빨간 막대가 최다 증가입니다.</p>
+      </div>
+      <ol class="movers" id="movers-list"></ol>
+    </section>
+
+    <section id="radar" class="section reveal-section" aria-labelledby="radar-title">
+      <div class="section__head">
+        <h2 class="section__title" id="radar-title"><small>§</small>레이더</h2>
+        <p class="section__note">빔이 지나간 자리에 신호가 찍히고 서서히 식습니다. 방위는 분야, 거리는 판정 단계 — 가운데일수록 도입에 가깝고, 바깥 점선 링은 아직 테스트 전인 이번 주 TOP 7입니다.</p>
+      </div>
+      <div class="radar-desk">
+        <figure class="instrument">
+          <div class="instrument__case">
+            <i class="screw screw--tl"></i><i class="screw screw--tr"></i><i class="screw screw--bl"></i><i class="screw screw--br"></i>
+            <div class="instrument__top">
+              <span class="instrument__plate">DEV RADAR <b>DR-46</b></span>
+              <span class="instrument__leds"><i class="led led--pwr is-on"></i>PWR<i class="led led--tx is-on" id="led-tx"></i>TX</span>
+            </div>
+            <div class="instrument__face">
+              <span class="instrument__quad instrument__quad--tl" data-quad="agent">에이전트·자동화 <b>0</b></span>
+              <span class="instrument__quad instrument__quad--tr" data-quad="model">AI 모델·데이터 <b>0</b></span>
+              <span class="instrument__quad instrument__quad--bl" data-quad="tools">개발 도구 <b>0</b></span>
+              <span class="instrument__quad instrument__quad--br" data-quad="web">웹·인프라 <b>0</b></span>
+              <div class="instrument__bezel">
+                <div class="crt" id="crt">
+                  <canvas id="radar-canvas" aria-hidden="true"></canvas>
+                  <div class="crt__hits" id="radar-hits"></div>
+                  <div class="crt__tip" id="radar-tip" hidden></div>
+                </div>
+              </div>
+            </div>
+            <div class="instrument__panel">
+              <p class="lcd" id="radar-lcd" aria-live="polite">EBL ---.-° · VRM -.--</p>
+              <div class="instrument__controls">
+                <button class="knob" id="knob-gain" type="button"><span class="knob__cap"></span><span class="knob__label">GAIN</span><span class="knob__value">MID</span></button>
+                <button class="knob" id="knob-range" type="button"><span class="knob__cap"></span><span class="knob__label">RANGE</span><span class="knob__value">TOP 7</span></button>
+                <button class="knob" id="knob-sweep" type="button"><span class="knob__cap"></span><span class="knob__label">SWEEP</span><span class="knob__value">10 RPM</span></button>
+                <button class="toggle" id="toggle-tx" type="button" aria-pressed="true"><span class="toggle__slot"><i class="toggle__lever"></i></span><span class="knob__label">TX</span><span class="knob__value">ON</span></button>
+              </div>
+            </div>
           </div>
-          <div class="tracks__cols" aria-hidden="true"><span>표적</span><span>레포</span><span>방위</span><span>주간 ★</span><span>판정</span></div>
-          <ol class="tracks" id="tracks"></ol>
-        </section>
-        <section class="panel target-panel" aria-labelledby="target-title">
-          <div class="panel__head">
-            <h2 class="panel__title" id="target-title">표적 정보<span>TARGET DATA</span></h2>
-            <p class="panel__meta" id="target-status">대기</p>
-          </div>
-          <div class="target" id="target" aria-live="polite"></div>
-        </section>
+          <figcaption class="caption"><b>그림 1</b> 이번 호 레이더. 점이나 오른쪽 목록을 누르면 표적을 록온하고, 다이얼로 감도·범위·회전 속도를 바꿉니다. 레이더가 화면에 있을 때 ← → 키로 표적을, Esc로 해제합니다.</figcaption>
+        </figure>
+        <aside class="radar-side">
+          <div class="target-card" id="target-card" aria-live="polite"></div>
+          <div id="radar-legend"></div>
+        </aside>
+      </div>
+      <ul class="ring-key" id="ring-key"></ul>
+    </section>
+
+    <section id="archive" class="section reveal-section" aria-labelledby="archive-title">
+      <div class="section__head">
+        <h2 class="section__title" id="archive-title"><small>§</small>지난 호</h2>
+        <p class="section__note">주마다 TOP 7을 호수별로 보관합니다. 이번 호는 매일 갱신되고 일요일 마지막 갱신으로 마감됩니다.</p>
+      </div>
+      <table class="issues">
+        <thead><tr><th scope="col">호</th><th scope="col">주차</th><th scope="col">TOP 7</th><th scope="col">상태</th></tr></thead>
+        <tbody id="issues-body"></tbody>
+      </table>
+      <div class="repeaters">
+        <h3>여러 주 TOP 7에 오른 레포</h3>
+        <div id="repeaters"></div>
       </div>
     </section>
 
-    <div class="ticker">
-      <p class="ticker__label"><span class="dot"></span>수신 중</p>
-      <div class="ticker__track"><div class="ticker__inner" id="ticker"></div></div>
-    </div>
+    <section id="digest" class="section reveal-section" aria-labelledby="digest-title">
+      <div class="section__head">
+        <h2 class="section__title" id="digest-title"><small>§</small>전달용 요약</h2>
+        <p class="section__note">주간보고나 팀 채널에 그대로 붙여 넣을 수 있게 이번 호를 정리한 텍스트입니다.</p>
+      </div>
+      <div class="digest">
+        <pre class="digest__text" id="digest-text"></pre>
+        <div class="digest__side">
+          <button class="btn btn--solid" id="copy-digest" type="button">요약 복사</button>
+          <p id="copy-status" role="status"></p>
+        </div>
+      </div>
+    </section>
 
-    <div class="sections">
-      <section class="panel reveal" id="log" aria-labelledby="log-title">
-        <div class="panel__head">
-          <h2 class="panel__title" id="log-title">스캔 기록<span>SCAN LOG · 지난 호</span></h2>
-          <p class="panel__meta">주마다 TOP 7을 호수별로 보관</p>
-        </div>
-        <div class="log">
-          <table class="issues">
-            <thead><tr><th scope="col">호</th><th scope="col">주차</th><th scope="col">TOP 7</th><th scope="col">상태</th></tr></thead>
-            <tbody id="issues-body"></tbody>
-          </table>
-          <div class="repeaters">
-            <h3>여러 주 TOP 7에 오른 레포</h3>
-            <div id="repeaters"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel reveal" id="legend" aria-labelledby="legend-title">
-        <div class="panel__head">
-          <h2 class="panel__title" id="legend-title">판정 기준과 읽는 법<span>LEGEND</span></h2>
-        </div>
-        <ul class="legend" id="legend-list"></ul>
-        <div class="howto">
-          <h3>레이더 읽는 법</h3>
-          <ul>
-            <li><b>방위</b>는 분야예요. 사분면 4개가 에이전트·자동화, AI 모델·데이터, 웹·인프라, 개발 도구입니다.</li>
-            <li><b>거리</b>는 판정 단계예요. 가운데에 가까울수록 도입에 가깝고, 바깥 점선 링은 테스트 전인 이번 주 TOP 7입니다.</li>
-            <li><b>스윕</b> 회전은 화면 연출이에요. 데이터는 매일 21:17(KST)에 GitHub Actions가 새로 받아 옵니다.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="panel reveal" id="briefing" aria-labelledby="briefing-title">
-        <div class="panel__head">
-          <h2 class="panel__title" id="briefing-title">브리핑<span>주간보고용 요약</span></h2>
-          <p class="panel__meta" id="copy-status" role="status"></p>
-        </div>
-        <div class="briefing">
-          <pre class="briefing__text" id="briefing-text"></pre>
-          <button class="ctl ctl--solid" id="copy-briefing" type="button">브리핑 복사</button>
-        </div>
-      </section>
-
-      <section class="panel reveal" id="sop" aria-labelledby="sop-title">
-        <div class="panel__head">
-          <h2 class="panel__title" id="sop-title">운영 절차<span>SOP</span></h2>
-          <p class="panel__meta">수집은 자동으로, 판단은 직접 써 본 뒤에</p>
-        </div>
-        <ol class="sop">
-          <li class="sop__step"><span class="sop__num">01</span><h3>수집</h3><p>매일 21:17(KST) GitHub Actions가 GitHub 주간 트렌딩을 받아 이번 호를 갱신합니다. 일요일 마지막 갱신으로 그 주 기록이 마감됩니다.</p></li>
-          <li class="sop__step"><span class="sop__num">02</span><h3>선정·요약</h3><p>주간 순위 상위 7개를 TOP 7 표적으로 기록하고, 레포 설명을 Claude로 한국어 요약합니다.</p></li>
-          <li class="sop__step"><span class="sop__num">03</span><h3>직접 테스트</h3><p>우리 업무에 쓸 만한 것을 골라 Claude Code로 설치·실행해 보고, <span data-project>러브오피스</span>에 붙일 수 있는지 검토합니다.</p></li>
-          <li class="sop__step"><span class="sop__num">04</span><h3>판정·공유</h3><p>도입·시험·검토·보류로 판정해 레이더에 올리고, 브리핑을 주간보고와 팀 채널로 공유합니다.</p></li>
-        </ol>
-        <div class="claude">
-          <h3>Claude 활용 방식</h3>
-          <ul>
-            <li><b>구축</b>이 사이트와 수집 파이프라인을 Claude Code로 설계·구현</li>
-            <li><b>요약</b>TOP 7 레포 설명을 한국어로 정리해 팀이 바로 읽게</li>
-            <li><b>테스트</b>클론·설치·예제 실행과 오류 원인 분석을 Claude Code로 한 번에</li>
-            <li><b>적용 검토</b><span data-project>러브오피스</span> 코드 기준으로 붙일 위치와 위험 요소 확인</li>
-          </ul>
-        </div>
-      </section>
-    </div>
+    <section id="method" class="section reveal-section" aria-labelledby="method-title">
+      <div class="section__head">
+        <h2 class="section__title" id="method-title"><small>§</small>운영 방식</h2>
+        <p class="section__note">수집은 자동으로, 판단은 직접 써 본 뒤에. 한 주 단위로 아래 네 단계를 돌립니다.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__no">1</span>
+          <h3>수집</h3>
+          <p>매일 21:17(KST) GitHub Actions가 GitHub 주간 트렌딩을 읽어 이번 호를 갱신합니다. 일요일 마지막 갱신으로 그 주 기록이 마감됩니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">2</span>
+          <h3>선정·요약</h3>
+          <p>주간 순위 상위 7개를 그 주의 TOP 7로 기록하고, 레포 설명을 Claude로 한국어 요약합니다. 여러 주 연속 오른 레포는 따로 표시합니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">3</span>
+          <h3>직접 테스트</h3>
+          <p>우리 업무에 쓸 만한 것을 골라 Claude Code로 설치·실행해 보고, <span data-project>러브오피스</span>에 붙일 수 있는지 검토합니다.</p>
+        </li>
+        <li class="step">
+          <span class="step__no">4</span>
+          <h3>판정·공유</h3>
+          <p>도입·시험·검토·보류로 판정해 레이더에 올리고, 전달용 요약을 주간보고와 팀 채널로 공유합니다.</p>
+        </li>
+      </ol>
+      <div class="claude-box">
+        <h3>Claude 활용 방식<small>사람은 판단, 반복 작업은 Claude</small></h3>
+        <ul>
+          <li><b>구축</b>이 사이트와 수집 파이프라인을 Claude Code로 설계·구현</li>
+          <li><b>요약</b>TOP 7 레포 설명을 한국어로 정리해 팀이 바로 읽을 수 있게</li>
+          <li><b>테스트</b>클론·설치·예제 실행과 오류 원인 분석을 Claude Code로 한 번에</li>
+          <li><b>적용 검토</b><span data-project>러브오피스</span> 코드 기준으로 붙일 위치와 위험 요소 확인</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
-  <footer class="wrap footer" id="footer"></footer>
+  <footer class="wrap">
+    <div class="colophon" id="colophon"></div>
+  </footer>
 
   <script type="module" src="app.js"></script>
 </body>
