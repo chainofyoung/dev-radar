@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "repo": "max-sixty/worktrunk",
+    "date": "2026-11-11",
+    "ring": "trial",
+    "summary": "Claude 세션마다 생기는 작업 공간(worktree)을 한눈에 보고, 만들기부터 병합·정리까지 명령 2개로 끝낸다. 병렬 작업 관리에 바로 쓸 만함.",
+    "tested": "Homebrew로 v0.81.0 설치. 러브오피스 저장소에서 wt list를 돌려 작업 공간 8개(Claude 세션 작업 공간 6개 포함), 커밋 안 된 변경이 있는 곳 3개, main보다 86커밋 뒤처진 ep20 작업 공간을 확인. DEV RADAR 복사본에서 생성 → 커밋 → wt merge로 병합하고 작업 공간·브랜치 자동 정리까지 5초. wt list가 .git/wt/cache에 남긴 캐시는 테스트 후 삭제.",
+    "fit": "세션마다 worktree가 쌓이는 러브오피스 저장소의 정리·병합 판단에 바로 쓸 수 있음. 팀 공용으로 쓰려면 셸 연동(wt config shell install)과 작업 공간 경로 규칙을 정해야 함."
+  },
+  {
+    "repo": "Donchitos/Claude-Code-Game-Studios",
+    "date": "2026-11-11",
+    "ring": "assess",
+    "summary": "Godot 전용 에이전트와 현지화·성우 파이프라인 스킬은 쓸 만하지만, 템플릿 전체는 무거워서 필요한 것만 골라 옮기는 게 맞다.",
+    "tested": "저장소를 받아 구성 분석: 에이전트 49개(Godot 전용 5개: GDScript·셰이더·GDExtension·C#·일반), 스킬 78개, 비주얼 노벨 장르 설정 확인. localize 스킬(번역 누락·자리표시자·길이 검증, 성우 파이프라인)과 GDScript 전문 에이전트, GDScript 파싱 검사 스크립트 내용 확인. 스킬이 템플릿 전용 설정(project.yaml, hooks)에 기대는 구조라 따로 옮길 때 손봐야 함. /prototype 실행은 안 함.",
+    "fit": "localize의 번역 검증과 성우 파이프라인을 러브오피스 3개 언어·재녹음 작업에, GDScript 전문 에이전트를 코드 리뷰에 시험 적용할 후보."
+  },
+  {
+    "repo": "vercel-labs/agent-browser",
+    "date": "2026-11-11",
+    "ring": "hold",
+    "summary": "설치와 테스트용 브라우저 다운로드까지는 됐지만, 이 맥 환경에서는 브라우저를 제어하지 못해 지금은 보류.",
+    "tested": "v0.42.0을 임시 폴더에 설치하고 Chrome for Testing 157(198MB) 다운로드. DEV RADAR 페이지를 열고 버튼을 누르는 QA 시나리오를 돌렸으나 CLI와 백그라운드 데몬 사이 응답 오류(os error 35)로 실패, 내장 점검(doctor)의 실행 테스트도 같은 오류. Node가 x86_64(Rosetta)로 깔린 환경 영향으로 추정.",
+    "fit": "arm64 Node 환경에서 다시 시험할 가치는 있음. 되면 사내 콘솔·DEV RADAR·홈페이지 화면 점검을 스크립트로 자동화할 수 있음."
+  }
+]
