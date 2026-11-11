@@ -228,7 +228,7 @@ export function createRadar(canvas, { rings, reducedMotion = false }) {
       ctx.strokeStyle = age < 0.22 ? '#f2fff8' : age < 0.8 ? '#b4ffc8' : '#6dff8c';
       ctx.shadowColor = '#5dff8f';
       ctx.shadowBlur = 12 * a;
-      ctx.lineWidth = e.weak ? 3 : 5.5;
+      ctx.lineWidth = (e.weak ? 3 : 5.5) * symbolScale();
       ctx.beginPath();
       ctx.arc(cx, cy, rr, rad(e.b - half - 90), rad(e.b + half - 90));
       ctx.stroke();
@@ -264,13 +264,18 @@ export function createRadar(canvas, { rings, reducedMotion = false }) {
     ctx.shadowBlur = 0;
   }
 
+  // 작은 화면(휴대폰)에서는 기호·글자·조준선을 화면 크기에 맞춰 줄여 겹치지 않게 한다.
+  const symbolScale = () => Math.min(1, Math.max(0.66, s.P / 230));
+
   function drawSymbol(t, now) {
     const { x, y } = position(t);
     const color = CRT_COLORS[t.verdict] ?? CRT_COLORS.detected;
     const hovered = t.id === s.hoverId;
     const selected = t.id === s.selectedId;
+    const k = symbolScale();
     ctx.save();
     ctx.translate(x, y);
+    ctx.scale(k, k);
     ctx.strokeStyle = color;
     ctx.fillStyle = color;
     ctx.lineWidth = 1.4;
