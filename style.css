@@ -505,6 +505,7 @@ a:hover { color: var(--red); }
 
 .caption { margin: 12px 4px 0; font: 13px/1.6 var(--sans); color: var(--muted); }
 .caption b { margin-right: 6px; font: 700 13px var(--serif); color: var(--ink); }
+.narrow-only { display: none; } /* 목록이 레이더 아래로 내려가는 폭(960px 이하)에서만 보임 */
 
 /* 표적 카드 (지면 쪽) */
 .radar-side { display: flex; flex-direction: column; gap: 26px; }
@@ -688,6 +689,8 @@ a:hover { color: var(--red); }
   .claude-box, .digest { grid-template-columns: minmax(0, 1fr); }
   .mover { grid-template-columns: 2em minmax(0, 13em) minmax(0, 1fr) 5.6em; }
   .mover__meta { display: none; }
+  .wide-only { display: none; }
+  .narrow-only { display: inline; }
 }
 
 @media (max-width: 900px) {
