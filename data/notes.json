@@ -1,5 +1,13 @@
 [
   {
+    "repo": "anthropics/skills",
+    "date": "2026-11-11",
+    "ring": "adopt",
+    "summary": "Anthropic 공식 스킬 19개를 Claude Code에 설치해 실행까지 검증했다. 문서(워드·PPT·엑셀·PDF) 생성·검증과 웹 화면 자동 시험을 지금 바로 쓸 수 있음.",
+    "tested": "스킬 세션에서 플러그인 5종(스킬 19개)을 등록·활성화하고 실행 도구(LibreOffice, poppler, pandoc, tesseract 한국어 OCR, Playwright 등) 설치. 저장소 자체 검증기 18/19 통과, 스킬별 실행 시험 전 항목 통과(웹 아티팩트 번들 1건은 우회 후 통과). 저장소 결함 6건·이 맥 환경 문제 5건 처리. 근거: anthropic-skills_분석보고서.md",
+    "fit": "수정요청 리스트 같은 엑셀·문서 작업과 사내 화면의 웹 자동 시험(webapp-testing)에 바로 쓸 수 있음. 기존 스킬과 이름이 겹치는 7종은 쓰면서 한쪽을 끄는 정리가 필요."
+  },
+  {
     "repo": "max-sixty/worktrunk",
     "date": "2026-11-11",
     "ring": "trial",
@@ -21,6 +29,6 @@
     "ring": "hold",
     "summary": "설치와 테스트용 브라우저 다운로드까지는 됐지만, 이 맥 환경에서는 브라우저를 제어하지 못해 지금은 보류.",
     "tested": "v0.42.0을 임시 폴더에 설치하고 Chrome for Testing 157(198MB) 다운로드. DEV RADAR 페이지를 열고 버튼을 누르는 QA 시나리오를 돌렸으나 CLI와 백그라운드 데몬 사이 응답 오류(os error 35)로 실패, 내장 점검(doctor)의 실행 테스트도 같은 오류. Node가 x86_64(Rosetta)로 깔린 환경 영향으로 추정.",
-    "fit": "arm64 Node 환경에서 다시 시험할 가치는 있음. 되면 사내 콘솔·DEV RADAR·홈페이지 화면 점검을 스크립트로 자동화할 수 있음."
+    "fit": "웹 화면 자동 점검은 이미 설치·검증된 webapp-testing 스킬(Playwright)로 먼저 대신한다. arm64 Node 환경에서 다시 시험할 가치는 있음."
   }
 ]
