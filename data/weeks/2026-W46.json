@@ -2,69 +2,69 @@
   "week": "2026-W46",
   "start": "2026-11-09",
   "end": "2026-11-15",
-  "collectedOn": "2026-11-12",
-  "updatedAt": "2026-11-11T19:41:06.386Z",
+  "collectedOn": "2026-11-13",
+  "updatedAt": "2026-11-12T20:00:21.842Z",
   "source": "https://github.com/trending?since=weekly",
   "items": [
     {
       "rank": 1,
-      "repo": "NVIDIA/auto-ontology",
-      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 11778,
-      "forks": 966,
-      "gained": 9621
-    },
-    {
-      "rank": 2,
       "repo": "anthropics/skills",
       "desc": "Public repository for Agent Skills",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 193023,
-      "forks": 22712,
-      "gained": 5014
+      "stars": 193635,
+      "forks": 22777,
+      "gained": 5738
     },
     {
-      "rank": 3,
-      "repo": "vercel-labs/agent-desktop",
-      "desc": "Computer use CLI for AI agents",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 21962,
-      "forks": 1634,
-      "gained": 9502
-    },
-    {
-      "rank": 4,
+      "rank": 2,
       "repo": "milind-soni/OpenMausBot",
       "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 21171,
-      "forks": 2952,
-      "gained": 8951
+      "stars": 21664,
+      "forks": 3016,
+      "gained": 9257
     },
     {
-      "rank": 5,
+      "rank": 3,
       "repo": "vercel-labs/agent-browser",
       "desc": "Browser automation CLI for AI agents",
       "lang": "Rust",
       "color": "#dea584",
-      "stars": 49770,
-      "forks": 3481,
-      "gained": 3606
+      "stars": 50277,
+      "forks": 3501,
+      "gained": 4183
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "repo": "NVIDIA/auto-ontology",
+      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 12186,
+      "forks": 1005,
+      "gained": 7947
+    },
+    {
+      "rank": 5,
       "repo": "cloudflare/security-audit-skill",
       "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "lang": "JavaScript",
       "color": "#f1e05a",
-      "stars": 70172,
-      "forks": 4650,
-      "gained": 10967
+      "stars": 71060,
+      "forks": 4722,
+      "gained": 11507
+    },
+    {
+      "rank": 6,
+      "repo": "vercel-labs/agent-desktop",
+      "desc": "Computer use CLI for AI agents",
+      "lang": "Rust",
+      "color": "#dea584",
+      "stars": 22636,
+      "forks": 1678,
+      "gained": 7772
     },
     {
       "rank": 7,
@@ -72,69 +72,49 @@
       "desc": "Skills for Real Engineers. Straight from my .agents directory.",
       "lang": "Shell",
       "color": "#89e051",
-      "stars": 321858,
-      "forks": 26982,
-      "gained": 9872
+      "stars": 322895,
+      "forks": 27076,
+      "gained": 9575
     },
     {
       "rank": 8,
-      "repo": "D4Vinci/Scrapling",
-      "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 101580,
-      "forks": 10588,
-      "gained": 7291
-    },
-    {
-      "rank": 9,
       "repo": "zed-industries/zed",
       "desc": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
       "lang": "Rust",
       "color": "#dea584",
-      "stars": 94694,
-      "forks": 11627,
-      "gained": 2262
+      "stars": 94821,
+      "forks": 11658,
+      "gained": 2310
     },
     {
-      "rank": 10,
-      "repo": "Donchitos/Claude-Code-Game-Studios",
-      "desc": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-      "lang": "Shell",
-      "color": "#89e051",
-      "stars": 38404,
-      "forks": 4999,
-      "gained": 3730
-    },
-    {
-      "rank": 11,
-      "repo": "google/skills",
-      "desc": "Agent Skills for Google products and technologies",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 23912,
-      "forks": 1994,
-      "gained": 2024
-    },
-    {
-      "rank": 12,
+      "rank": 9,
       "repo": "google-deepmind/mujoco",
       "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "lang": "C++",
       "color": "#f34b7d",
-      "stars": 17619,
-      "forks": 2166,
-      "gained": 1130
+      "stars": 17748,
+      "forks": 2180,
+      "gained": 1535
     },
     {
-      "rank": 13,
-      "repo": "herdrdev/herdr",
-      "desc": "the runtime your coding agents live on",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 50269,
-      "forks": 4062,
-      "gained": 2196
+      "rank": 10,
+      "repo": "google/skills",
+      "desc": "Agent Skills for Google products and technologies",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 24045,
+      "forks": 2003,
+      "gained": 2013
+    },
+    {
+      "rank": 11,
+      "repo": "D4Vinci/Scrapling",
+      "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 102061,
+      "forks": 10622,
+      "gained": 5814
     }
   ]
 }

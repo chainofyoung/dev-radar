@@ -1,84 +1,84 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-11T19:41:06.386Z",
+  "updatedAt": "2026-11-12T20:00:21.842Z",
   "topN": 7,
   "weeks": [
     {
       "id": "2026-W46",
       "start": "2026-11-09",
       "end": "2026-11-15",
-      "updatedAt": "2026-11-11T19:41:06.386Z",
+      "updatedAt": "2026-11-12T20:00:21.842Z",
       "top": [
-        "NVIDIA/auto-ontology",
         "anthropics/skills",
-        "vercel-labs/agent-desktop",
         "milind-soni/OpenMausBot",
         "vercel-labs/agent-browser",
+        "NVIDIA/auto-ontology",
         "cloudflare/security-audit-skill",
+        "vercel-labs/agent-desktop",
         "mattpocock/skills"
       ]
     }
   ],
   "repos": {
-    "NVIDIA/auto-ontology": {
+    "anthropics/skills": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 1,
       "lang": "Python",
       "color": "#3572A5",
-      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
-      "stars": 11778
+      "desc": "Public repository for Agent Skills",
+      "stars": 193635
     },
-    "anthropics/skills": {
+    "milind-soni/OpenMausBot": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 2,
-      "lang": "Python",
-      "color": "#3572A5",
-      "desc": "Public repository for Agent Skills",
-      "stars": 193023
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "stars": 21664
     },
-    "vercel-labs/agent-desktop": {
+    "vercel-labs/agent-browser": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 3,
       "lang": "Rust",
       "color": "#dea584",
-      "desc": "Computer use CLI for AI agents",
-      "stars": 21962
+      "desc": "Browser automation CLI for AI agents",
+      "stars": 50277
     },
-    "milind-soni/OpenMausBot": {
+    "NVIDIA/auto-ontology": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 4,
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "stars": 21171
-    },
-    "vercel-labs/agent-browser": {
-      "weeks": [
-        "2026-W46"
-      ],
-      "bestRank": 5,
-      "lang": "Rust",
-      "color": "#dea584",
-      "desc": "Browser automation CLI for AI agents",
-      "stars": 49770
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
+      "stars": 12186
     },
     "cloudflare/security-audit-skill": {
       "weeks": [
         "2026-W46"
       ],
-      "bestRank": 6,
+      "bestRank": 5,
       "lang": "JavaScript",
       "color": "#f1e05a",
       "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "stars": 70172
+      "stars": 71060
+    },
+    "vercel-labs/agent-desktop": {
+      "weeks": [
+        "2026-W46"
+      ],
+      "bestRank": 6,
+      "lang": "Rust",
+      "color": "#dea584",
+      "desc": "Computer use CLI for AI agents",
+      "stars": 22636
     },
     "mattpocock/skills": {
       "weeks": [
@@ -88,7 +88,7 @@
       "lang": "Shell",
       "color": "#89e051",
       "desc": "Skills for Real Engineers. Straight from my .agents directory.",
-      "stars": 321858
+      "stars": 322895
     }
   }
 }
