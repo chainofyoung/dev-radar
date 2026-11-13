@@ -1,94 +1,94 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-12T20:00:21.842Z",
+  "updatedAt": "2026-11-13T19:48:09.121Z",
   "topN": 7,
   "weeks": [
     {
       "id": "2026-W46",
       "start": "2026-11-09",
       "end": "2026-11-15",
-      "updatedAt": "2026-11-12T20:00:21.842Z",
+      "updatedAt": "2026-11-13T19:48:09.121Z",
       "top": [
+        "sherlock-project/sherlock",
         "anthropics/skills",
         "milind-soni/OpenMausBot",
         "vercel-labs/agent-browser",
-        "NVIDIA/auto-ontology",
-        "cloudflare/security-audit-skill",
-        "vercel-labs/agent-desktop",
-        "mattpocock/skills"
+        "google/elephant-goldfish-model",
+        "ZhuLinsen/daily_stock_analysis",
+        "NVIDIA/auto-ontology"
       ]
     }
   ],
   "repos": {
-    "anthropics/skills": {
+    "sherlock-project/sherlock": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 1,
       "lang": "Python",
       "color": "#3572A5",
+      "desc": "Hunt down social media accounts by username across social networks",
+      "stars": 111030
+    },
+    "anthropics/skills": {
+      "weeks": [
+        "2026-W46"
+      ],
+      "bestRank": 2,
+      "lang": "Python",
+      "color": "#3572A5",
       "desc": "Public repository for Agent Skills",
-      "stars": 193635
+      "stars": 194085
     },
     "milind-soni/OpenMausBot": {
       "weeks": [
         "2026-W46"
       ],
-      "bestRank": 2,
+      "bestRank": 3,
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "stars": 21664
+      "stars": 22123
     },
     "vercel-labs/agent-browser": {
       "weeks": [
         "2026-W46"
       ],
-      "bestRank": 3,
+      "bestRank": 4,
       "lang": "Rust",
       "color": "#dea584",
       "desc": "Browser automation CLI for AI agents",
-      "stars": 50277
+      "stars": 50654
+    },
+    "google/elephant-goldfish-model": {
+      "weeks": [
+        "2026-W46"
+      ],
+      "bestRank": 5,
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "Open-source plugin for designing and reviewing software with agents",
+      "stars": 18538
+    },
+    "ZhuLinsen/daily_stock_analysis": {
+      "weeks": [
+        "2026-W46"
+      ],
+      "bestRank": 6,
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
+      "stars": 71491
     },
     "NVIDIA/auto-ontology": {
       "weeks": [
         "2026-W46"
       ],
-      "bestRank": 4,
+      "bestRank": 7,
       "lang": "Python",
       "color": "#3572A5",
       "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
-      "stars": 12186
-    },
-    "cloudflare/security-audit-skill": {
-      "weeks": [
-        "2026-W46"
-      ],
-      "bestRank": 5,
-      "lang": "JavaScript",
-      "color": "#f1e05a",
-      "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "stars": 71060
-    },
-    "vercel-labs/agent-desktop": {
-      "weeks": [
-        "2026-W46"
-      ],
-      "bestRank": 6,
-      "lang": "Rust",
-      "color": "#dea584",
-      "desc": "Computer use CLI for AI agents",
-      "stars": 22636
-    },
-    "mattpocock/skills": {
-      "weeks": [
-        "2026-W46"
-      ],
-      "bestRank": 7,
-      "lang": "Shell",
-      "color": "#89e051",
-      "desc": "Skills for Real Engineers. Straight from my .agents directory.",
-      "stars": 322895
+      "stars": 12515
     }
   }
 }

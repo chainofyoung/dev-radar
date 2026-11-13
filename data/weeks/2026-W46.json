@@ -2,119 +2,159 @@
   "week": "2026-W46",
   "start": "2026-11-09",
   "end": "2026-11-15",
-  "collectedOn": "2026-11-13",
-  "updatedAt": "2026-11-12T20:00:21.842Z",
+  "collectedOn": "2026-11-14",
+  "updatedAt": "2026-11-13T19:48:09.121Z",
   "source": "https://github.com/trending?since=weekly",
   "items": [
     {
       "rank": 1,
+      "repo": "sherlock-project/sherlock",
+      "desc": "Hunt down social media accounts by username across social networks",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 111030,
+      "forks": 12852,
+      "gained": 14381
+    },
+    {
+      "rank": 2,
       "repo": "anthropics/skills",
       "desc": "Public repository for Agent Skills",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 193635,
-      "forks": 22777,
-      "gained": 5738
+      "stars": 194085,
+      "forks": 22823,
+      "gained": 6055
     },
     {
-      "rank": 2,
+      "rank": 3,
       "repo": "milind-soni/OpenMausBot",
       "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 21664,
-      "forks": 3016,
-      "gained": 9257
+      "stars": 22123,
+      "forks": 3068,
+      "gained": 9104
     },
     {
-      "rank": 3,
+      "rank": 4,
       "repo": "vercel-labs/agent-browser",
       "desc": "Browser automation CLI for AI agents",
       "lang": "Rust",
       "color": "#dea584",
-      "stars": 50277,
-      "forks": 3501,
-      "gained": 4183
+      "stars": 50654,
+      "forks": 3523,
+      "gained": 4601
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "repo": "google/elephant-goldfish-model",
+      "desc": "Open-source plugin for designing and reviewing software with agents",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 18538,
+      "forks": 1380,
+      "gained": 5555
+    },
+    {
+      "rank": 6,
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 71491,
+      "forks": 57262,
+      "gained": 3569
+    },
+    {
+      "rank": 7,
       "repo": "NVIDIA/auto-ontology",
       "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 12186,
-      "forks": 1005,
-      "gained": 7947
-    },
-    {
-      "rank": 5,
-      "repo": "cloudflare/security-audit-skill",
-      "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "lang": "JavaScript",
-      "color": "#f1e05a",
-      "stars": 71060,
-      "forks": 4722,
-      "gained": 11507
-    },
-    {
-      "rank": 6,
-      "repo": "vercel-labs/agent-desktop",
-      "desc": "Computer use CLI for AI agents",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 22636,
-      "forks": 1678,
-      "gained": 7772
-    },
-    {
-      "rank": 7,
-      "repo": "mattpocock/skills",
-      "desc": "Skills for Real Engineers. Straight from my .agents directory.",
-      "lang": "Shell",
-      "color": "#89e051",
-      "stars": 322895,
-      "forks": 27076,
-      "gained": 9575
+      "stars": 12515,
+      "forks": 1025,
+      "gained": 5802
     },
     {
       "rank": 8,
-      "repo": "zed-industries/zed",
-      "desc": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 94821,
-      "forks": 11658,
-      "gained": 2310
-    },
-    {
-      "rank": 9,
       "repo": "google-deepmind/mujoco",
       "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "lang": "C++",
       "color": "#f34b7d",
-      "stars": 17748,
-      "forks": 2180,
-      "gained": 1535
+      "stars": 17853,
+      "forks": 2187,
+      "gained": 1671
+    },
+    {
+      "rank": 9,
+      "repo": "mattpocock/skills",
+      "desc": "Skills for Real Engineers. Straight from my .agents directory.",
+      "lang": "Shell",
+      "color": "#89e051",
+      "stars": 323720,
+      "forks": 27167,
+      "gained": 8731
     },
     {
       "rank": 10,
-      "repo": "google/skills",
-      "desc": "Agent Skills for Google products and technologies",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 24045,
-      "forks": 2003,
-      "gained": 2013
+      "repo": "addyosmani/agent-skills",
+      "desc": "Production-grade engineering skills for AI coding agents.",
+      "lang": "JavaScript",
+      "color": "#f1e05a",
+      "stars": 117090,
+      "forks": 12243,
+      "gained": 3199
     },
     {
       "rank": 11,
-      "repo": "D4Vinci/Scrapling",
-      "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+      "repo": "cloudflare/security-audit-skill",
+      "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "lang": "JavaScript",
+      "color": "#f1e05a",
+      "stars": 71787,
+      "forks": 4781,
+      "gained": 10700
+    },
+    {
+      "rank": 12,
+      "repo": "zed-industries/zed",
+      "desc": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "lang": "Rust",
+      "color": "#dea584",
+      "stars": 94944,
+      "forks": 11688,
+      "gained": 2339
+    },
+    {
+      "rank": 13,
+      "repo": "anthropics/claude-quickstarts",
+      "desc": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 102061,
-      "forks": 10622,
-      "gained": 5814
+      "stars": 20855,
+      "forks": 3491,
+      "gained": 1710
+    },
+    {
+      "rank": 14,
+      "repo": "vercel-labs/agent-desktop",
+      "desc": "Computer use CLI for AI agents",
+      "lang": "Rust",
+      "color": "#dea584",
+      "stars": 23222,
+      "forks": 1720,
+      "gained": 6414
+    },
+    {
+      "rank": 15,
+      "repo": "lobehub/lobehub",
+      "desc": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 85354,
+      "forks": 16286,
+      "gained": 1186
     }
   ]
 }
