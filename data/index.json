@@ -1,54 +1,54 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-13T19:48:09.121Z",
+  "updatedAt": "2026-11-14T18:12:28.271Z",
   "topN": 7,
   "weeks": [
     {
       "id": "2026-W46",
       "start": "2026-11-09",
       "end": "2026-11-15",
-      "updatedAt": "2026-11-13T19:48:09.121Z",
+      "updatedAt": "2026-11-14T18:12:28.271Z",
       "top": [
+        "meta/astryx",
         "sherlock-project/sherlock",
         "anthropics/skills",
-        "milind-soni/OpenMausBot",
         "vercel-labs/agent-browser",
         "google/elephant-goldfish-model",
-        "ZhuLinsen/daily_stock_analysis",
-        "NVIDIA/auto-ontology"
+        "milind-soni/OpenMausBot",
+        "ZhuLinsen/daily_stock_analysis"
       ]
     }
   ],
   "repos": {
-    "sherlock-project/sherlock": {
+    "meta/astryx": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 1,
-      "lang": "Python",
-      "color": "#3572A5",
-      "desc": "Hunt down social media accounts by username across social networks",
-      "stars": 111030
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "An open source design system that's fully customizable and agent ready",
+      "stars": 27941
     },
-    "anthropics/skills": {
+    "sherlock-project/sherlock": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 2,
       "lang": "Python",
       "color": "#3572A5",
-      "desc": "Public repository for Agent Skills",
-      "stars": 194085
+      "desc": "Hunt down social media accounts by username across social networks",
+      "stars": 111669
     },
-    "milind-soni/OpenMausBot": {
+    "anthropics/skills": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 3,
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "stars": 22123
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "Public repository for Agent Skills",
+      "stars": 194501
     },
     "vercel-labs/agent-browser": {
       "weeks": [
@@ -58,7 +58,7 @@
       "lang": "Rust",
       "color": "#dea584",
       "desc": "Browser automation CLI for AI agents",
-      "stars": 50654
+      "stars": 51097
     },
     "google/elephant-goldfish-model": {
       "weeks": [
@@ -68,27 +68,27 @@
       "lang": "Python",
       "color": "#3572A5",
       "desc": "Open-source plugin for designing and reviewing software with agents",
-      "stars": 18538
+      "stars": 19022
     },
-    "ZhuLinsen/daily_stock_analysis": {
+    "milind-soni/OpenMausBot": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 6,
-      "lang": "Python",
-      "color": "#3572A5",
-      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
-      "stars": 71491
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "stars": 22666
     },
-    "NVIDIA/auto-ontology": {
+    "ZhuLinsen/daily_stock_analysis": {
       "weeks": [
         "2026-W46"
       ],
       "bestRank": 7,
       "lang": "Python",
       "color": "#3572A5",
-      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
-      "stars": 12515
+      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
+      "stars": 72202
     }
   }
 }

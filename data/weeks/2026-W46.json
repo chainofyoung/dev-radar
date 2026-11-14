@@ -2,39 +2,39 @@
   "week": "2026-W46",
   "start": "2026-11-09",
   "end": "2026-11-15",
-  "collectedOn": "2026-11-14",
-  "updatedAt": "2026-11-13T19:48:09.121Z",
+  "collectedOn": "2026-11-15",
+  "updatedAt": "2026-11-14T18:12:28.271Z",
   "source": "https://github.com/trending?since=weekly",
   "items": [
     {
       "rank": 1,
+      "repo": "meta/astryx",
+      "desc": "An open source design system that's fully customizable and agent ready",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 27941,
+      "forks": 2169,
+      "gained": 13375
+    },
+    {
+      "rank": 2,
       "repo": "sherlock-project/sherlock",
       "desc": "Hunt down social media accounts by username across social networks",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 111030,
-      "forks": 12852,
-      "gained": 14381
+      "stars": 111669,
+      "forks": 12924,
+      "gained": 13364
     },
     {
-      "rank": 2,
+      "rank": 3,
       "repo": "anthropics/skills",
       "desc": "Public repository for Agent Skills",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 194085,
-      "forks": 22823,
-      "gained": 6055
-    },
-    {
-      "rank": 3,
-      "repo": "milind-soni/OpenMausBot",
-      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "stars": 22123,
-      "forks": 3068,
-      "gained": 9104
+      "stars": 194501,
+      "forks": 22891,
+      "gained": 6169
     },
     {
       "rank": 4,
@@ -42,9 +42,9 @@
       "desc": "Browser automation CLI for AI agents",
       "lang": "Rust",
       "color": "#dea584",
-      "stars": 50654,
-      "forks": 3523,
-      "gained": 4601
+      "stars": 51097,
+      "forks": 3564,
+      "gained": 4360
     },
     {
       "rank": 5,
@@ -52,29 +52,29 @@
       "desc": "Open-source plugin for designing and reviewing software with agents",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 18538,
-      "forks": 1380,
-      "gained": 5555
+      "stars": 19022,
+      "forks": 1414,
+      "gained": 5560
     },
     {
       "rank": 6,
+      "repo": "milind-soni/OpenMausBot",
+      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 22666,
+      "forks": 3152,
+      "gained": 7763
+    },
+    {
+      "rank": 7,
       "repo": "ZhuLinsen/daily_stock_analysis",
       "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 71491,
-      "forks": 57262,
-      "gained": 3569
-    },
-    {
-      "rank": 7,
-      "repo": "NVIDIA/auto-ontology",
-      "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 12515,
-      "forks": 1025,
-      "gained": 5802
+      "stars": 72202,
+      "forks": 57462,
+      "gained": 3778
     },
     {
       "rank": 8,
@@ -82,19 +82,19 @@
       "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
       "lang": "C++",
       "color": "#f34b7d",
-      "stars": 17853,
-      "forks": 2187,
-      "gained": 1671
+      "stars": 17959,
+      "forks": 2197,
+      "gained": 1764
     },
     {
       "rank": 9,
-      "repo": "mattpocock/skills",
-      "desc": "Skills for Real Engineers. Straight from my .agents directory.",
-      "lang": "Shell",
-      "color": "#89e051",
-      "stars": 323720,
-      "forks": 27167,
-      "gained": 8731
+      "repo": "backnotprop/plannotator",
+      "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 10899,
+      "forks": 830,
+      "gained": 511
     },
     {
       "rank": 10,
@@ -102,59 +102,19 @@
       "desc": "Production-grade engineering skills for AI coding agents.",
       "lang": "JavaScript",
       "color": "#f1e05a",
-      "stars": 117090,
-      "forks": 12243,
-      "gained": 3199
+      "stars": 117480,
+      "forks": 12287,
+      "gained": 3502
     },
     {
       "rank": 11,
-      "repo": "cloudflare/security-audit-skill",
-      "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "lang": "JavaScript",
-      "color": "#f1e05a",
-      "stars": 71787,
-      "forks": 4781,
-      "gained": 10700
-    },
-    {
-      "rank": 12,
-      "repo": "zed-industries/zed",
-      "desc": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 94944,
-      "forks": 11688,
-      "gained": 2339
-    },
-    {
-      "rank": 13,
       "repo": "anthropics/claude-quickstarts",
       "desc": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 20855,
-      "forks": 3491,
-      "gained": 1710
-    },
-    {
-      "rank": 14,
-      "repo": "vercel-labs/agent-desktop",
-      "desc": "Computer use CLI for AI agents",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 23222,
-      "forks": 1720,
-      "gained": 6414
-    },
-    {
-      "rank": 15,
-      "repo": "lobehub/lobehub",
-      "desc": "🤯 LobeHub - Super-Agents on Your Team. Add super-agents to the chats your team already uses.They take on work by themselves and get better every week.",
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "stars": 85354,
-      "forks": 16286,
-      "gained": 1186
+      "stars": 20953,
+      "forks": 3494,
+      "gained": 1731
     }
   ]
 }
