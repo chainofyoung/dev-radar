@@ -1,0 +1,120 @@
+{
+  "week": "2026-W47",
+  "start": "2026-11-16",
+  "end": "2026-11-22",
+  "collectedOn": "2026-11-16",
+  "updatedAt": "2026-11-15T18:55:27.355Z",
+  "source": "https://github.com/trending?since=weekly",
+  "items": [
+    {
+      "rank": 1,
+      "repo": "meta/astryx",
+      "desc": "An open source design system that's fully customizable and agent ready",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 28721,
+      "forks": 2244,
+      "gained": 13660
+    },
+    {
+      "rank": 2,
+      "repo": "anthropics/skills",
+      "desc": "Public repository for Agent Skills",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 195249,
+      "forks": 22954,
+      "gained": 6220
+    },
+    {
+      "rank": 3,
+      "repo": "sherlock-project/sherlock",
+      "desc": "Hunt down social media accounts by username across social networks",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 112358,
+      "forks": 12983,
+      "gained": 12401
+    },
+    {
+      "rank": 4,
+      "repo": "backnotprop/plannotator",
+      "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 11731,
+      "forks": 1063,
+      "gained": 818
+    },
+    {
+      "rank": 5,
+      "repo": "vercel-labs/agent-browser",
+      "desc": "Browser automation CLI for AI agents",
+      "lang": "Rust",
+      "color": "#dea584",
+      "stars": 51534,
+      "forks": 3601,
+      "gained": 4601
+    },
+    {
+      "rank": 6,
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 72452,
+      "forks": 57563,
+      "gained": 4526
+    },
+    {
+      "rank": 7,
+      "repo": "we-promise/sure",
+      "desc": "The personal finance app for everyone (by everyone)",
+      "lang": "Ruby",
+      "color": "#701516",
+      "stars": 15632,
+      "forks": 1368,
+      "gained": 4483
+    },
+    {
+      "rank": 8,
+      "repo": "milind-soni/OpenMausBot",
+      "desc": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 23223,
+      "forks": 3227,
+      "gained": 6413
+    },
+    {
+      "rank": 9,
+      "repo": "google/elephant-goldfish-model",
+      "desc": "Open-source plugin for designing and reviewing software with agents",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 19627,
+      "forks": 1458,
+      "gained": 5539
+    },
+    {
+      "rank": 10,
+      "repo": "google-deepmind/mujoco",
+      "desc": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "lang": "C++",
+      "color": "#f34b7d",
+      "stars": 18055,
+      "forks": 2211,
+      "gained": 1859
+    },
+    {
+      "rank": 11,
+      "repo": "addyosmani/agent-skills",
+      "desc": "Production-grade engineering skills for AI coding agents.",
+      "lang": "JavaScript",
+      "color": "#f1e05a",
+      "stars": 117857,
+      "forks": 12334,
+      "gained": 3670
+    }
+  ]
+}
