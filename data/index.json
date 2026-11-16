@@ -1,6 +1,6 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-15T18:55:27.355Z",
+  "updatedAt": "2026-11-16T22:13:54.464Z",
   "topN": 7,
   "weeks": [
     {
@@ -22,15 +22,15 @@
       "id": "2026-W47",
       "start": "2026-11-16",
       "end": "2026-11-22",
-      "updatedAt": "2026-11-15T18:55:27.355Z",
+      "updatedAt": "2026-11-16T22:13:54.464Z",
       "top": [
+        "GoogleChrome/modern-web-guidance-src",
         "meta/astryx",
-        "anthropics/skills",
-        "sherlock-project/sherlock",
         "backnotprop/plannotator",
+        "anthropics/skills",
         "vercel-labs/agent-browser",
-        "ZhuLinsen/daily_stock_analysis",
-        "we-promise/sure"
+        "we-promise/sure",
+        "ZhuLinsen/daily_stock_analysis"
       ]
     }
   ],
@@ -44,29 +44,28 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "An open source design system that's fully customizable and agent ready",
-      "stars": 28721
+      "stars": 29527
     },
     "sherlock-project/sherlock": {
       "weeks": [
-        "2026-W46",
-        "2026-W47"
+        "2026-W46"
       ],
       "bestRank": 2,
       "lang": "Python",
       "color": "#3572A5",
       "desc": "Hunt down social media accounts by username across social networks",
-      "stars": 112358
+      "stars": 111669
     },
     "anthropics/skills": {
       "weeks": [
         "2026-W46",
         "2026-W47"
       ],
-      "bestRank": 2,
+      "bestRank": 3,
       "lang": "Python",
       "color": "#3572A5",
       "desc": "Public repository for Agent Skills",
-      "stars": 195249
+      "stars": 195996
     },
     "vercel-labs/agent-browser": {
       "weeks": [
@@ -77,7 +76,7 @@
       "lang": "Rust",
       "color": "#dea584",
       "desc": "Browser automation CLI for AI agents",
-      "stars": 51534
+      "stars": 51987
     },
     "google/elephant-goldfish-model": {
       "weeks": [
@@ -104,31 +103,41 @@
         "2026-W46",
         "2026-W47"
       ],
-      "bestRank": 6,
+      "bestRank": 7,
       "lang": "Python",
       "color": "#3572A5",
       "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
-      "stars": 72452
+      "stars": 72787
+    },
+    "GoogleChrome/modern-web-guidance-src": {
+      "weeks": [
+        "2026-W47"
+      ],
+      "bestRank": 1,
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "Keep your coding agent up to date with the latest web best practices",
+      "stars": 7945
     },
     "backnotprop/plannotator": {
       "weeks": [
         "2026-W47"
       ],
-      "bestRank": 4,
+      "bestRank": 3,
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "stars": 11731
+      "stars": 12494
     },
     "we-promise/sure": {
       "weeks": [
         "2026-W47"
       ],
-      "bestRank": 7,
+      "bestRank": 6,
       "lang": "Ruby",
       "color": "#701516",
       "desc": "The personal finance app for everyone (by everyone)",
-      "stars": 15632
+      "stars": 15979
     }
   }
 }
