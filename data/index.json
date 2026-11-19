@@ -1,6 +1,6 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-18T20:38:23.402Z",
+  "updatedAt": "2026-11-19T20:44:39.236Z",
   "topN": 7,
   "weeks": [
     {
@@ -22,29 +22,28 @@
       "id": "2026-W47",
       "start": "2026-11-16",
       "end": "2026-11-22",
-      "updatedAt": "2026-11-18T20:38:23.402Z",
+      "updatedAt": "2026-11-19T20:44:39.236Z",
       "top": [
-        "GoogleChrome/modern-web-guidance-src",
         "backnotprop/plannotator",
-        "elementalsouls/Claude-BugHunter",
-        "meta/astryx",
-        "we-promise/sure",
+        "google-labs-code/stitch-skills",
+        "GoogleChrome/modern-web-guidance-src",
         "alibaba/open-code-review",
-        "google-labs-code/stitch-skills"
+        "mvanhorn/last30days-skill",
+        "ChromeDevTools/chrome-devtools-mcp",
+        "tradermonty/claude-trading-skills"
       ]
     }
   ],
   "repos": {
     "meta/astryx": {
       "weeks": [
-        "2026-W46",
-        "2026-W47"
+        "2026-W46"
       ],
       "bestRank": 1,
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "An open source design system that's fully customizable and agent ready",
-      "stars": 30532
+      "stars": 27941
     },
     "sherlock-project/sherlock": {
       "weeks": [
@@ -106,65 +105,75 @@
       "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
       "stars": 72202
     },
-    "GoogleChrome/modern-web-guidance-src": {
+    "backnotprop/plannotator": {
       "weeks": [
         "2026-W47"
       ],
       "bestRank": 1,
       "lang": "TypeScript",
       "color": "#3178c6",
-      "desc": "Keep your coding agent up to date with the latest web best practices",
-      "stars": 8794
+      "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "stars": 13636
     },
-    "backnotprop/plannotator": {
+    "google-labs-code/stitch-skills": {
       "weeks": [
         "2026-W47"
       ],
       "bestRank": 2,
       "lang": "TypeScript",
       "color": "#3178c6",
-      "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "stars": 13393
+      "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
+      "stars": 10664
     },
-    "elementalsouls/Claude-BugHunter": {
+    "GoogleChrome/modern-web-guidance-src": {
       "weeks": [
         "2026-W47"
       ],
       "bestRank": 3,
-      "lang": "Python",
-      "color": "#3572A5",
-      "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
-      "stars": 11151
-    },
-    "we-promise/sure": {
-      "weeks": [
-        "2026-W47"
-      ],
-      "bestRank": 5,
-      "lang": "Ruby",
-      "color": "#701516",
-      "desc": "The personal finance app for everyone (by everyone)",
-      "stars": 16475
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "Keep your coding agent up to date with the latest web best practices",
+      "stars": 9077
     },
     "alibaba/open-code-review": {
       "weeks": [
         "2026-W47"
       ],
-      "bestRank": 6,
+      "bestRank": 4,
       "lang": "Go",
       "color": "#00ADD8",
       "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-      "stars": 54159
+      "stars": 54356
     },
-    "google-labs-code/stitch-skills": {
+    "mvanhorn/last30days-skill": {
+      "weeks": [
+        "2026-W47"
+      ],
+      "bestRank": 5,
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "stars": 70712
+    },
+    "ChromeDevTools/chrome-devtools-mcp": {
+      "weeks": [
+        "2026-W47"
+      ],
+      "bestRank": 6,
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "desc": "Chrome DevTools for coding agents",
+      "stars": 58342
+    },
+    "tradermonty/claude-trading-skills": {
       "weeks": [
         "2026-W47"
       ],
       "bestRank": 7,
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
-      "stars": 10368
+      "lang": "Python",
+      "color": "#3572A5",
+      "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "stars": 7220
     }
   }
 }

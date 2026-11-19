@@ -2,169 +2,139 @@
   "week": "2026-W47",
   "start": "2026-11-16",
   "end": "2026-11-22",
-  "collectedOn": "2026-11-19",
-  "updatedAt": "2026-11-18T20:38:23.402Z",
+  "collectedOn": "2026-11-20",
+  "updatedAt": "2026-11-19T20:44:39.236Z",
   "source": "https://github.com/trending?since=weekly",
   "items": [
     {
       "rank": 1,
-      "repo": "GoogleChrome/modern-web-guidance-src",
-      "desc": "Keep your coding agent up to date with the latest web best practices",
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "stars": 8794,
-      "forks": 736,
-      "gained": 7015
-    },
-    {
-      "rank": 2,
       "repo": "backnotprop/plannotator",
       "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 13393,
-      "forks": 1346,
-      "gained": 2926
+      "stars": 13636,
+      "forks": 1378,
+      "gained": 3290
     },
     {
-      "rank": 3,
-      "repo": "elementalsouls/Claude-BugHunter",
-      "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 11151,
-      "forks": 1498,
-      "gained": 2508
-    },
-    {
-      "rank": 4,
-      "repo": "meta/astryx",
-      "desc": "An open source design system that's fully customizable and agent ready",
-      "lang": "TypeScript",
-      "color": "#3178c6",
-      "stars": 30532,
-      "forks": 2393,
-      "gained": 8700
-    },
-    {
-      "rank": 5,
-      "repo": "we-promise/sure",
-      "desc": "The personal finance app for everyone (by everyone)",
-      "lang": "Ruby",
-      "color": "#701516",
-      "stars": 16475,
-      "forks": 1443,
-      "gained": 4786
-    },
-    {
-      "rank": 6,
-      "repo": "alibaba/open-code-review",
-      "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "lang": "Go",
-      "color": "#00ADD8",
-      "stars": 54159,
-      "forks": 4481,
-      "gained": 3675
-    },
-    {
-      "rank": 7,
+      "rank": 2,
       "repo": "google-labs-code/stitch-skills",
       "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 10368,
-      "forks": 1365,
-      "gained": 1197
+      "stars": 10664,
+      "forks": 1383,
+      "gained": 1567
     },
     {
-      "rank": 8,
-      "repo": "tradermonty/claude-trading-skills",
-      "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 7057,
-      "forks": 1437,
-      "gained": 2985
-    },
-    {
-      "rank": 9,
-      "repo": "ChromeDevTools/chrome-devtools-mcp",
-      "desc": "Chrome DevTools for coding agents",
+      "rank": 3,
+      "repo": "GoogleChrome/modern-web-guidance-src",
+      "desc": "Keep your coding agent up to date with the latest web best practices",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 58200,
-      "forks": 4878,
-      "gained": 2948
+      "stars": 9077,
+      "forks": 753,
+      "gained": 7257
     },
     {
-      "rank": 10,
-      "repo": "anthropics/skills",
-      "desc": "Public repository for Agent Skills",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 197148,
-      "forks": 23094,
-      "gained": 4847
+      "rank": 4,
+      "repo": "alibaba/open-code-review",
+      "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "lang": "Go",
+      "color": "#00ADD8",
+      "stars": 54356,
+      "forks": 4500,
+      "gained": 4383
     },
     {
-      "rank": 11,
-      "repo": "ZhuLinsen/daily_stock_analysis",
-      "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 73321,
-      "forks": 57882,
-      "gained": 3653
-    },
-    {
-      "rank": 12,
+      "rank": 5,
       "repo": "mvanhorn/last30days-skill",
       "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 69884,
-      "forks": 6237,
-      "gained": 1548
+      "stars": 70712,
+      "forks": 6299,
+      "gained": 2423
     },
     {
-      "rank": 13,
+      "rank": 6,
+      "repo": "ChromeDevTools/chrome-devtools-mcp",
+      "desc": "Chrome DevTools for coding agents",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 58342,
+      "forks": 4878,
+      "gained": 3143
+    },
+    {
+      "rank": 7,
+      "repo": "tradermonty/claude-trading-skills",
+      "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 7220,
+      "forks": 1456,
+      "gained": 3242
+    },
+    {
+      "rank": 8,
       "repo": "ag-ui-protocol/ag-ui",
       "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 20397,
-      "forks": 2100,
-      "gained": 2773
+      "stars": 20606,
+      "forks": 2122,
+      "gained": 3221
     },
     {
-      "rank": 14,
-      "repo": "vercel-labs/agent-browser",
-      "desc": "Browser automation CLI for AI agents",
-      "lang": "Rust",
-      "color": "#dea584",
-      "stars": 52620,
-      "forks": 3682,
-      "gained": 3429
-    },
-    {
-      "rank": 15,
-      "repo": "openai/codex-security",
-      "desc": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+      "rank": 9,
+      "repo": "meta/astryx",
+      "desc": "An open source design system that's fully customizable and agent ready",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 14091,
-      "forks": 1098,
-      "gained": 2531
+      "stars": 30903,
+      "forks": 2420,
+      "gained": 6250
     },
     {
-      "rank": 16,
+      "rank": 10,
+      "repo": "pookjw/HermesEnabler",
+      "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "lang": "Objective-C",
+      "color": "#438eff",
+      "stars": 2243,
+      "forks": 189,
+      "gained": 1019
+    },
+    {
+      "rank": 11,
+      "repo": "we-promise/sure",
+      "desc": "The personal finance app for everyone (by everyone)",
+      "lang": "Ruby",
+      "color": "#701516",
+      "stars": 16675,
+      "forks": 1475,
+      "gained": 3866
+    },
+    {
+      "rank": 12,
       "repo": "dream-num/univer",
       "desc": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 29863,
-      "forks": 2703,
-      "gained": 5845
+      "stars": 30417,
+      "forks": 2749,
+      "gained": 6840
+    },
+    {
+      "rank": 13,
+      "repo": "kajisho5/ffmpeg-skill",
+      "desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 8291,
+      "forks": 770,
+      "gained": 2894
     }
   ]
 }
