@@ -2,8 +2,8 @@
   "week": "2026-W47",
   "start": "2026-11-16",
   "end": "2026-11-22",
-  "collectedOn": "2026-11-20",
-  "updatedAt": "2026-11-19T20:44:39.236Z",
+  "collectedOn": "2026-11-21",
+  "updatedAt": "2026-11-20T20:28:07.545Z",
   "source": "https://github.com/trending?since=weekly",
   "items": [
     {
@@ -12,9 +12,9 @@
       "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 13636,
-      "forks": 1378,
-      "gained": 3290
+      "stars": 13855,
+      "forks": 1398,
+      "gained": 3468
     },
     {
       "rank": 2,
@@ -22,9 +22,9 @@
       "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 10664,
-      "forks": 1383,
-      "gained": 1567
+      "stars": 10973,
+      "forks": 1401,
+      "gained": 1829
     },
     {
       "rank": 3,
@@ -32,9 +32,9 @@
       "desc": "Keep your coding agent up to date with the latest web best practices",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 9077,
-      "forks": 753,
-      "gained": 7257
+      "stars": 9491,
+      "forks": 773,
+      "gained": 6858
     },
     {
       "rank": 4,
@@ -42,9 +42,9 @@
       "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
       "lang": "Go",
       "color": "#00ADD8",
-      "stars": 54356,
-      "forks": 4500,
-      "gained": 4383
+      "stars": 54710,
+      "forks": 4524,
+      "gained": 4492
     },
     {
       "rank": 5,
@@ -52,9 +52,9 @@
       "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 70712,
-      "forks": 6299,
-      "gained": 2423
+      "stars": 71369,
+      "forks": 6348,
+      "gained": 3179
     },
     {
       "rank": 6,
@@ -62,9 +62,9 @@
       "desc": "Chrome DevTools for coding agents",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 58342,
-      "forks": 4878,
-      "gained": 3143
+      "stars": 58513,
+      "forks": 4886,
+      "gained": 3229
     },
     {
       "rank": 7,
@@ -72,9 +72,9 @@
       "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 7220,
-      "forks": 1456,
-      "gained": 3242
+      "stars": 7403,
+      "forks": 1477,
+      "gained": 3385
     },
     {
       "rank": 8,
@@ -82,9 +82,9 @@
       "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 20606,
-      "forks": 2122,
-      "gained": 3221
+      "stars": 20784,
+      "forks": 2129,
+      "gained": 3455
     },
     {
       "rank": 9,
@@ -92,9 +92,9 @@
       "desc": "An open source design system that's fully customizable and agent ready",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 30903,
-      "forks": 2420,
-      "gained": 6250
+      "stars": 31304,
+      "forks": 2459,
+      "gained": 4977
     },
     {
       "rank": 10,
@@ -102,9 +102,9 @@
       "desc": "Enable Hermès Watch Faces on any Apple Watch devices",
       "lang": "Objective-C",
       "color": "#438eff",
-      "stars": 2243,
-      "forks": 189,
-      "gained": 1019
+      "stars": 2296,
+      "forks": 192,
+      "gained": 904
     },
     {
       "rank": 11,
@@ -112,9 +112,9 @@
       "desc": "The personal finance app for everyone (by everyone)",
       "lang": "Ruby",
       "color": "#701516",
-      "stars": 16675,
-      "forks": 1475,
-      "gained": 3866
+      "stars": 16882,
+      "forks": 1491,
+      "gained": 3226
     },
     {
       "rank": 12,
@@ -122,9 +122,9 @@
       "desc": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 30417,
-      "forks": 2749,
-      "gained": 6840
+      "stars": 30917,
+      "forks": 2823,
+      "gained": 7248
     },
     {
       "rank": 13,
@@ -132,9 +132,9 @@
       "desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 8291,
-      "forks": 770,
-      "gained": 2894
+      "stars": 8761,
+      "forks": 804,
+      "gained": 2998
     }
   ]
 }
