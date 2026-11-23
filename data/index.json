@@ -1,6 +1,6 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-22T19:46:30.788Z",
+  "updatedAt": "2026-11-23T23:58:44.585Z",
   "topN": 7,
   "weeks": [
     {
@@ -37,7 +37,7 @@
       "id": "2026-W48",
       "start": "2026-11-23",
       "end": "2026-11-29",
-      "updatedAt": "2026-11-22T19:46:30.788Z",
+      "updatedAt": "2026-11-23T23:58:44.585Z",
       "top": [
         "backnotprop/plannotator",
         "google-labs-code/stitch-skills",
@@ -129,7 +129,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "stars": 14375
+      "stars": 14662
     },
     "google-labs-code/stitch-skills": {
       "weeks": [
@@ -140,7 +140,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
-      "stars": 11845
+      "stars": 12268
     },
     "GoogleChrome/modern-web-guidance-src": {
       "weeks": [
@@ -151,7 +151,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Keep your coding agent up to date with the latest web best practices",
-      "stars": 10160
+      "stars": 10505
     },
     "alibaba/open-code-review": {
       "weeks": [
@@ -162,7 +162,7 @@
       "lang": "Go",
       "color": "#00ADD8",
       "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-      "stars": 55356
+      "stars": 55683
     },
     "mvanhorn/last30days-skill": {
       "weeks": [
@@ -173,7 +173,7 @@
       "lang": "Python",
       "color": "#3572A5",
       "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "stars": 72600
+      "stars": 73423
     },
     "ChromeDevTools/chrome-devtools-mcp": {
       "weeks": [
@@ -184,7 +184,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Chrome DevTools for coding agents",
-      "stars": 58816
+      "stars": 59020
     },
     "tradermonty/claude-trading-skills": {
       "weeks": [
@@ -195,7 +195,7 @@
       "lang": "Python",
       "color": "#3572A5",
       "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-      "stars": 7763
+      "stars": 8035
     }
   }
 }
