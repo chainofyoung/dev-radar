@@ -1,6 +1,6 @@
 {
   "since": "2026-11-11",
-  "updatedAt": "2026-11-26T21:40:04.670Z",
+  "updatedAt": "2026-11-27T21:24:30.366Z",
   "topN": 7,
   "weeks": [
     {
@@ -37,7 +37,7 @@
       "id": "2026-W48",
       "start": "2026-11-23",
       "end": "2026-11-29",
-      "updatedAt": "2026-11-26T21:40:04.670Z",
+      "updatedAt": "2026-11-27T21:24:30.366Z",
       "top": [
         "backnotprop/plannotator",
         "google-labs-code/stitch-skills",
@@ -129,7 +129,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "stars": 15238
+      "stars": 15406
     },
     "google-labs-code/stitch-skills": {
       "weeks": [
@@ -140,7 +140,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
-      "stars": 13254
+      "stars": 13557
     },
     "GoogleChrome/modern-web-guidance-src": {
       "weeks": [
@@ -151,7 +151,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Keep your coding agent up to date with the latest web best practices",
-      "stars": 11238
+      "stars": 11436
     },
     "alibaba/open-code-review": {
       "weeks": [
@@ -162,7 +162,7 @@
       "lang": "Go",
       "color": "#00ADD8",
       "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-      "stars": 56626
+      "stars": 56877
     },
     "mvanhorn/last30days-skill": {
       "weeks": [
@@ -173,7 +173,7 @@
       "lang": "Python",
       "color": "#3572A5",
       "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "stars": 75674
+      "stars": 76312
     },
     "ChromeDevTools/chrome-devtools-mcp": {
       "weeks": [
@@ -184,7 +184,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Chrome DevTools for coding agents",
-      "stars": 59492
+      "stars": 59611
     },
     "tradermonty/claude-trading-skills": {
       "weeks": [
@@ -204,7 +204,7 @@
       "lang": "TypeScript",
       "color": "#3178c6",
       "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By ",
-      "stars": 3957
+      "stars": 4268
     }
   }
 }
